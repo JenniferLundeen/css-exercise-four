@@ -10,44 +10,28 @@ body {
   height:925px;
 }
 
-div {
+.baku {
+  background: #fff url(../images/baku.jpg) no-repeat top center
+}
+
+.london {
+  background: #fff url(../images/london.png) no-repeat top center;
+}
+
+.madrid {
+  background: #fff url(../images/madrid.jpg) no-repeat top center;
+}
+
+.rome {
+  background: #fff url(../images/rome.jpg) no-repeat top center;
+}
+
+.preview {
+  background-size:cover;
   float: left;
   margin-bottom: 15px;
   height: 25%;
   width: 100%;
-}
-
-@media screen and (min-width: 575px){
-   div {
-    margin: 1%;
-    width: 48%;
-  }
-
-@media screen and (min-width: 991px){
-   div {
-    margin: 1%;
-    width: 23%;
-    }›
-}
-
-.preview-baku {
-  background: #fff url(../images/baku.jpg) no-repeat top center;
-  background-size:cover;
-}
-
-.preview-london {
-  background: #fff url(../images/london.png) no-repeat top center;
-  background-size:cover;
-}
-
-.preview-madrid {
-  background: #fff url(../images/madrid.jpg) no-repeat top center;
-  background-size:cover;
-}
-
-.preview-rome {
-  background: #fff url(../images/rome.jpg) no-repeat top center;
-  background-size:cover;
 }
 
 h1 {
@@ -55,6 +39,11 @@ h1 {
     font-weight: 500;
     text-transform: capitalize;
     padding: 25px;
+    text-align: center;
+}
+
+.preview h1 {
+  text-align: left;
 }
 
 .emphasis {
@@ -62,5 +51,17 @@ h1 {
     font-size: 60%; /* 12px */
     font-weight: 400;
     text-transform:uppercase;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
+
+@media screen and (min-width: 575px){
+   .preview {
+    margin: 1%;
+    width: 48%;
+  }
+
+@media screen and (min-width: 991px){
+   .preview {
+    margin: 1%;
+    width: 23%;
+  }
